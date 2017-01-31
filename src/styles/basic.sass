@@ -1,0 +1,222 @@
+$font-title: 'Russo One', sans-serif;
+$font-text: 'Titillium Web', sans-serif;
+
+$yellow: #FFDE16
+$purple: #7B2A90
+
+body
+	background: #000
+	color: #fff
+	font-size: 16px
+a
+	text-decoration: none
+p
+	font-family: $font-text
+ul
+	list-style: none
+	padding: 0
+#top
+	display: block
+.col-centered
+	float: none
+	margin: 0 auto
+.foo
+	padding: 85px 0
+.title-section
+	color: $yellow
+	font-family: $font-title
+	font-size: 3em
+	text-transform: uppercase
+
+header
+	position: relative
+	overflow: hidden
+	.brand
+		margin: 20px 0
+	.brand span
+		position: relative
+		&:before
+			content: url(../images/logo-m.png)
+			margin: 0 10px
+			float: left
+			@media screen and (min-width: 768px)
+				content: url(../images/logo.png)
+				margin: 0 calc(50% - 190px/2)
+				float: none
+	.icon-menu-mobile
+		display: inline-block
+		position: relative
+		float: right
+		margin: 30px 20px
+		& button:before
+			content: url(../images/menu.png)
+		@media screen and (min-width: 768px)
+			display: none
+	.menu
+		display: none
+		@media screen and (min-width: 768px)
+			display: block
+			background-color: #3E4544
+			padding: 15px 0
+			transition: all .4s ease-in-out
+			width: 100%
+			ul
+				margin: 0 calc(50% - 575px/2)
+			ul li
+				display: inline-block
+				margin: auto 25px
+				& > a
+					color: $yellow
+					font-family: $font-title
+					font-size: 1.1em
+					text-transform: uppercase
+					&:hover
+						color: #BAB6A8
+						text-decoration: none
+			&.active
+				position: fixed
+				z-index: 99999
+				top: 0
+	.menu-mobile
+		background-color: $yellow
+		height: 100%
+		width: 60%
+		top: 0
+		bottom: 0
+		clear: both
+		padding: 25px
+		position: fixed
+		transition: all .5s ease-in
+		transform: translateX(200%)
+		z-index: 99999
+		ul
+			text-align: center
+			li
+				margin: 20px 0
+				&[data-target="close"]
+					color: #000
+					margin-top: 50px
+					font-family: $font-title
+					font-size: 0.9em
+					text-transform: uppercase
+			li a
+				color: $purple
+				font-family: $font-title
+				font-size: 1.2em
+				text-transform: uppercase
+		@media screen and (min-width: 768px)	
+			display: none
+		&.active
+			transform: translateX(70%)
+.toTop
+	display: block
+	opacity: 0
+	visibility: hidden
+	width: 30px
+	transition: all .6s ease-in
+	@media screen and (max-width: 1080px)
+		display: none
+	span[class*="flaticon"]:before
+		margin: 0
+		color: #A19D91
+		font-size: 2em
+		position: fixed
+		right: 30px
+		bottom: 100px
+		z-index: 9999
+	&.active
+		opacity: 1
+		visibility: visible
+.item-blocks
+	box-sizing: border-box
+	margin: 50px auto
+	padding: 180px 15px 25px
+	position: relative
+	max-width: 300px
+	p
+		margin-top: 25px
+	&:before
+		content: ''
+		border-radius: 50%
+		position: absolute
+		height: 150px
+		width: 150px
+		top: 25px
+		left: calc(50% - 150px/2)
+span[class*="flaticon-md"]:before
+	font-size: 5.2em
+	margin: 0 !important
+	top: 41px
+	position: absolute
+	left: calc(50% - 85px/2)
+.social-list
+	display: inline-block
+	a
+		color: $yellow
+		text-decoration: none
+footer
+	background: #3E4544
+	padding: 40px 0
+	position: relative
+	width: 100%
+	.subtitle
+		color: $yellow
+		font-family: $font-title
+		font-size: 1.4em
+	.item-footer
+		li
+			margin: 8px 0
+			font-family: $font-text
+		.address
+			padding-left: 28px
+		span:before
+			color: #BAB6A8
+			position: relative
+			font-size: 1em
+			margin: 0
+			padding: 5px
+	span
+		color: #EDEDED
+		font-family: $font-text
+		font-size: 1em
+		font-style: italic
+	.by
+		color: $yellow
+		display: block
+		margin: 30px 15px
+		font-size: .7em
+		font-style: normal
+		a img
+			display: block
+	p
+		color: #A19D91
+		position: absolute
+		bottom: -5px
+		left: calc(50% - 155px/2)
+.form-feedback
+	opacity: 0
+	visibility: hidden
+	width: 300px
+	height: 220px
+	padding: 50px 0
+	top: calc(50% - 220px/2)
+	left: calc(50% - 300px/2)
+	position: fixed
+	background-color: #000
+	z-index: 99
+	transition: all .6s ease-in-out
+	h3
+		font-family: $font-title
+		font-size: 1.2em
+		text-align: center
+	.close-feedback
+		color: #fff
+		position: absolute
+		left: calc(50% - 10px/2)
+		cursor: pointer
+	&.active
+		opacity: 1
+		visibility: visible
+	
+.carousel-inner
+	max-height: 650px !important

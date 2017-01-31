@@ -1,0 +1,48 @@
+.diferentials
+	.title-section
+		@media screen and(max-width: 480px)
+			font-size: 2.2em
+	.item-blocks:before
+		height: 110%
+		width: 100%
+		top: 0
+		left: 0
+	.blocks--diferentials
+		&:before
+			border: none
+		span[class*="flaticon-"]:before
+			color: #EDEDED
+			font-size: 12em !important
+			top: 0
+			left: calc(50% - 195px/2)
+			transition: all .5s ease-in
+		h3
+			font-family: $font-title
+			margin-top: 100px
+	.block-inspiration.active
+		span[class*="flaticon-"]:before
+			color: red
+	.block-creative
+		span[class*="flaticon-"]:before
+			transition-delay: .8s
+		&.active
+			span[class*="flaticon-"]:before
+				color: $yellow
+	.block-presentation
+		transition: all .5s ease-in
+		span[class*="flaticon-"]:before
+			transition-delay: 1.4s
+		&:after
+			opacity: 0
+			content: url(../images/like.png)
+			position: absolute
+			top: 54px
+			left: calc(50% - 128px/2)
+			transition: all .5s ease 2.4s
+		&.active
+			span[class*="flaticon-"]:before
+				color: #541cc7
+			&:after
+				opacity: 1
+				transform: scale(.6)
+

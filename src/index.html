@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Dream Factory</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<!-- Iconfont -->
+	<link rel="stylesheet" type="text/css" href="css/font/flaticon.css"> 
+	<!-- Local CSS file -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<span id="top"></span>
+	<header>
+		<div class="brand">
+			<span></span>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="#about">Sobre</a></li>
+				<li><a href="#services">Serviços</a></li>
+				<li><a href="#partners">Parceiros</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</nav>
+		<span class="icon-menu-mobile"><button></button></span>
+		<nav class="menu-mobile">
+			<ul>
+				<li class="link-mobile"><a href="#about">Sobre</a></li>
+				<li class="link-mobile"><a href="#services">Serviços</a></li>
+				<li class="link-mobile"><a href="#partners">Parceiros</a></li>
+				<li class="link-mobile"><a href="#contact">Contato</a></li>
+				<li data-target="close" class="close-menu-mobile"><button>x Fechar</button></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<div class="toTop">
+		<a href="#top"><span class="flaticon-arrows"></span></a>
+	</div>
+
+	<!-- CAROUSEL -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive" src="images/slide3.jpg" alt="Make.It DOliveira">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive" src="images/slide2.jpg" alt="Make.It DOliveira">
+    </div>
+
+		<div class="item">
+		    <img class="img-responsive" src="images/slide1.jpg" alt="Make.It DOliveira">
+		</div>
+
+    <div class="item">
+      <img class="img-responsive" src="images/slide4.jpg" alt="Make.It DOliveira">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	<!-- ABOUT -->
+	<section class="foo about" id="about">
+		<div class="container">
+			<div class="row">
+				<h2 class="title-section text-center">Sobre</h2>
+				<div class="col-md-10 col-xs-12 col-centered about-row">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<p>
+							Aqui nós trabalhamos para que seu sonho se torne realidade. Imagine algo que goste agregado a seu computador e tornamos realidade.
+							<br/>
+							Um dos trabalhos desenvolvidos na oficina é a criação de peças e partes, onde através de um projeto-base são criadas diversas peças que compõem o kit do computador, baseado no tema escohido.
+							<br/>
+							O casemod é a arte de modificar um computador original de fábrica. As técnicas executadas visam melhorar a aparência, fluxo de ar e organização interna de componentes.
+						</p>
+						<section class="progress-block">
+							<div class="item-progress">
+								<div class="progress">
+									<label for="">Design</label>
+								  <div class="progress-bar" data-progress="design" role="progressbar" aria-valuenow="70"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+								</div>
+							</div>
+							<div class="item-progress">
+								<div class="progress">
+									<label for="">Criatividade</label>
+								  <div class="progress-bar" data-progress="criatividade" role="progressbar" aria-valuenow="50"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+								</div>
+							</div>
+							<div class="item-progress">
+								<div class="progress">
+									<label for="">Técnica</label>
+								  <div class="progress-bar" data-progress="tecnica" role="progressbar" aria-valuenow="20"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+								</div>
+							</div>
+							<div class="item-progress">
+								<div class="progress">
+									<label for="">Inovação</label>
+								  <div class="progress-bar" data-progress="inovacao" role="progressbar" aria-valuenow="90"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<img class="img-responsive" src="http://cdn.coolermaster.com/wp-content/uploads/2016/12/1-79-550x550.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SERVICES -->
+	<section class="foo services" id="services">
+		<div class="container">
+			<div class="row">
+				<h2 class="title-section text-center">Serviços</h2>
+				<div class="col-md-12 col-xs-12 col-centered">
+					<div class="col-md-4 col-sm-12 col-xs-12 text-center block-service">
+						<div class="item-blocks">
+							<span class="flaticon-md flaticon-chip"></span>
+								<h3 class="subtitle">Make.It</h3>
+							<p>
+								Traga a ideia ou rascunho do sonho que deseja realizar, e nós faremos ele tornar-se realidade. “Make it” significa “Faça”, mas aqui na oficina Dream Factory você imagina e nós fazemos.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 text-center block-service">
+						<div class="item-blocks">
+							<span class="flaticon-md flaticon-squares"></span>
+							<h3 class="subtitle">Design 3D</h3>
+							<p>
+								As ideias são transmitidas para um desenho em 3 dimensões onde o cliente poderá visualizar o que será construído. A partir disso é possível iniciar a construção do projeto.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 text-center block-service">
+						<div class="item-blocks">
+							<span class="flaticon-md flaticon-computer-1"></span>
+							<h3 class="subtitle">Projeto Final</h3>
+							<p>
+								O projeto final é a realização do sonho do cliente, que a oficina Dream Factory terá o imenso prazer de entregar.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- PARTNERS -->
+	<section class="foo partners" id="partners">
+		<div class="container">
+			<div class="row">
+				<h2 class="title-section text-center">Parceiros</h2>
+				<div class="col-md-12 col-xs-12 col-centered">
+					<p class="text-center">
+						Todas empresas que acreditam que sonhos podem se tornar realidade, e que todos esses sonhos podem ser realizados na Dream Factory.
+					</p>
+					<div class="col-sm-12 col-xs-12 text-center">
+						<div class="item-blocks">
+							<div class="brand-partner">
+							</div>
+							<p>
+								Este é o Canal Oficina DIY, o lugar certo para quem gosta de aprender a construir e cozinhar com criatividade e facilidade, se inscreva-se em nosso canal e receba as atualizações dos vídeos que vão ao ar toda sexta, intercalados entre o Oficina DIY e o Culinária GEEK.
+							</p>
+							<ul class="social-partners">
+								<li class="social-list"><a href="https://www.facebook.com/oficinadiy" target="_blank" title="Facebook">
+									<span class="facebook flaticon-facebook-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="https://twitter.com/canaloficinadiy" target="_blank" title="Twitter">
+									<span class="twitter flaticon-twitter-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="https://instagram.com/canaloficinadiy/" target="_blank" title="Instagram">
+									<span class="instagram flaticon-instagram-logo"></span>
+								</a></li>
+								<li class="social-list"><a href="http://oficinadiy.com.br" target="_blank" title="Linkedin">
+									<span class="linkedin flaticon-social-media-1"></span>
+								</a></li>
+							</ul>
+						</div>			
+					</div>
+					<!-- <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+						<div class="item-blocks">
+							<div class="brand-partner">
+							</div>
+							<p>
+								Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+							</p>
+							<ul class="social-partners">
+								<li class="social-list"><a href="" target="_blank" title="Facebook">
+									<span class="facebook flaticon-facebook-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Twitter">
+									<span class="twitter flaticon-twitter-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Instagram">
+									<span class="instagram flaticon-instagram-logo"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Linkedin">
+									<span class="linkedin flaticon-social-media-1"></span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 col-xs-12 text-center">
+						<div class="item-blocks">
+							<div class="brand-partner">
+							</div>
+							<p>
+								Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+							</p>
+							<ul class="social-partners">
+								<li class="social-list"><a href="" target="_blank" title="Facebook">
+									<span class="facebook flaticon-facebook-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Twitter">
+									<span class="twitter flaticon-twitter-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Instagram">
+									<span class="instagram flaticon-instagram-logo"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Linkedin">
+									<span class="linkedin flaticon-social-media-1"></span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 col-xs-12 text-center">
+						<div class="item-blocks">
+							<div class="brand-partner">
+							</div>
+							<p>
+								Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+							</p>
+							<ul class="social-partners">
+								<li class="social-list"><a href="" target="_blank" title="Facebook">
+									<span class="facebook flaticon-facebook-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Twitter">
+									<span class="twitter flaticon-twitter-logo-button"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Instagram">
+									<span class="instagram flaticon-instagram-logo"></span>
+								</a></li>
+								<li class="social-list"><a href="" target="_blank" title="Linkedin">
+									<span class="linkedin flaticon-social-media-1"></span>
+								</a></li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p>Quer se tornar um parceiro?</p>
+					<button type="button"><a href="#contact" title="Entre em contato">Entre em contato</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- DIFERENTIALS -->
+	<section class="foo diferentials" id="diferentials">
+		<div class="container">
+			<div class="row">
+				<h2 class="title-section text-center">Diferenciais</h2>
+				<div class="col-xs-12">
+					<div class="col-md-4">
+						<div class="item-blocks blocks--diferentials block-inspiration">
+							<span class="flaticon-md flaticon-technology"></span>
+							<h3 class="text-center">Inspiração</h3>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-blocks blocks--diferentials block-creative">
+							<span class="flaticon-md flaticon-light"></span>
+							<h3 class="text-center">Criatividade</h3>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-blocks blocks--diferentials block-presentation">
+							<span class="flaticon-md flaticon-screen"></span>
+							<h3 class="text-center">Apresentação</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section class="foo contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<h2 class="title-section text-center">Contato</h2>
+				<div class="col-md-8 col-xs-12 col-centered text-center">
+					<h3 class="subtitle">Obrigado pela visita!</h3>
+					<p>
+						Agradecemos a sua visita ao site. Caso tenha alguma dúvida, sugestão ou reclamação, por favor, nos envie um contato utilizando o formulário ao lado. Sua opinião é muito importante e de grande valor para melhorarmos nosso atendimento e toda a prestação de serviços.
+					</p>
+					<div class="form">
+						<form class="form-group" id="form-email">
+							<fieldset class="input-group">
+								<input class="form-control" type="text" placeholder="Nome" name="name" id="name" required>
+							</fieldset>
+							<fieldset class="input-group">
+								<input class="form-control" type="text" placeholder="E-mail" name="email" id="email" required>
+							</fieldset>
+							<fieldset class="input-group">
+								<input class="form-control" type="text" placeholder="Assunto" name="subject" id="subject" required>
+							</fieldset>
+							<fieldset class="input-group">
+								<textarea class="form-control" name="message" id="message" cols="20" rows="5" placeholder="Mensagem" required></textarea>
+							</fieldset>
+							<button type="submit">ENVIAR</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-xs-12">
+					<h4 class="subtitle">Visite-nos</h4>
+					<ul class="item-footer">
+						<li><span class="flaticon-cursor"></span>Rua Descampado, 735 - Jd.Sto André</li>
+						<li class="address">Santo André - São Paulo</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h4 class="subtitle">Contato</h4>
+					<ul class="item-footer">
+						<li><span class="flaticon-telephone-auricular-with-cable"></span>+55 11 99168-8153</li>
+						<li><span class="flaticon-internet"></span>contato@dreamfactorybr.com</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<span>"Nós acreditamos em Deus"</span>
+					<span class="by">powered by<a href=""><img src="images/will.png" alt=""></a></span>
+				</div>
+			</div>
+			<p class="text-center">© 2016 Dream Factory</p>
+		</div>
+	</footer>
+	<div class="form-feedback">
+		<h3 class='form-success'>
+			Obrigado pelo contato.<br/>Retornaremos em breve!
+		</h3>
+		<span class="close-feedback">x</span>
+	</div>
+
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/app.js"></script>
+	<!-- FORM AJAX & PHP -->
+	<script type="text/javascript">
+		$('#form-email').on('submit', function(e) {
+			//previne o comportamento padrão que é enviar o formulário
+			e.preventDefault();
+
+			//captura os valores do formulário
+			var vnome = $('#name').val();
+			var vemail = $('#email').val();
+			var vassunto = $('#subject').val();
+			var vmsg = $('#message').val();
+
+			//armazena os valores dentro de uma variavel json
+			post_data = {
+			'user_name' : vnome,
+			'user_email' : vemail,
+			'subject' : vassunto,
+			'msg' : vmsg
+			};
+
+		  	// requisição ajax passando os parametros do formulário para o php
+		  	$.post('sendEmail.php', post_data, function(response){
+
+			   	//verifica o tipo da resposta
+			   	if(response.type == 'error'){
+			    	output = '<div class="error">'+response.text+'</div>';
+			   	}else{
+			   		
+			   		$('.form-feedback').addClass('active');
+
+			    	//limpa todos os campos do formulário e o esconde para evidenciar a resposta
+			    	$('#name').val("");
+			    	$('#email').val("");
+			    	$('#subject').val("");
+			    	$('#message').val("");
+			     	$("#form").fadeOut();
+			   	}
+			   	//escreve a resposta na div responsável por mostrar o retorno
+			   	// $("#response").html(output);
+		  	},
+		  	'json');
+	  	});
+	</script>
+</body>
+</html>
